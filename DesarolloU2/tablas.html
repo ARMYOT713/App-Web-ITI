@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Tablas HTML - UPA  ISC - ITI"/>
+    <title>Tablas HTML - UPA Yoselin Carolina Gil Garcia ITI</title>
+
+    <link rel="preconnect" href="https://fonts.google.com/">
+    <link rel="preconnect" href="https://fonts.gstatic.com/">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+   
+    <header class="header">
+        <nav class="nav container">
+
+            <a href="index.html" class="logo">UPA</a>
+            <button class="nav-toggle" aria-label="Abrir menú">
+              <span></span>
+              <span></span>
+              <span></span>
+            </button>
+           
+            <ul class="nav-menu">
+
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="index.html#servicios">Servicios</a></li>
+                <li><a href="index.html#nosotros">Nosotros</a></li>
+                <li><a href="elementos.html">Elementos</a></li>
+                <li><a href="tablas.html">Tablas</a></li>
+                <li>
+                    <a href="index.html#contacto" class="btn btn-contacto">Contacto</a></li>
+
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container hero-content">
+                <h1>Tablas HTML</h1>
+                <p>Ejemplos de estructura y uso de tablas</p>
+            </div>
+        </section>
+
+   
+        <section class="section">
+            <div class="container">
+                <header class="section-header">
+                    <h2>Tabla Simple</h2>
+                    <p>Estructura básica de una tabla HTML</p>
+                </header>
+
+                <div class="card">
+                    <h3>Horario de Clases - ITI</h3>
+                    <table class="tabla">
+                        <thead>
+                            <tr>
+                                <th>Hora</th>
+                                <th>Lunes</th>
+                                <th>Martes</th>
+                                <th>Miércoles</th>
+                                <th>Jueves</th>
+                                <th>Viernes</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>7:00 - 9:00</td>
+                                <td>Programación Web</td>
+                                <td>Bases de Datos</td>
+                                <td>Programación Web</td>
+                                <td>Redes</td>
+                                <td>Programación Web</td>
+                            </tr>
+                            <tr>
+                                <td>9:00 - 11:00</td>
+                                <td>Matemáticas</td>
+                                <td>Programación</td>
+                                <td>Inglés</td>
+                                <td>Bases de Datos</td>
+                                <td>Proyecto</td>
+                            </tr>
+                            <tr>
+                                <td>11:00 - 13:00</td>
+                                <td>Redes</td>
+                                <td>Sistemas Operativos</td>
+                                <td>Matemáticas</td>
+                                <td>Programación</td>
+                                <td>Libre</td>
+                            </tr>
+                            <tr>
+                                <td>13:00 - 15:00</td>
+                                <td colspan="5">DESCANSO</td>
+                            </tr>
+                            <tr>
+                                <td>15:00 - 17:00</td>
+                                <td>Inglés</td>
+                                <td>Proyecto</td>
+                                <td>Bases de Datos</td>
+                                <td>Sistemas Operativos</td>
+                                <td>Tutoría</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        
+        <section class="section section-alt">
+            <div class="container">
+                <header class="section-header">
+                    <h2>Lista de Estudiantes</h2>
+                    <p>Tabla con información académica</p>
+                </header>
+
+                <div class="card">
+                    <h3>Estudiantes de ITI - 5to Cuatrimestre</h3>
+                    <table class="tabla">
+                        <thead>
+                            <tr>
+                                <th>Matrícula</th>
+                                <th>Nombre Completo</th>
+                                <th>Carrera</th>
+                                <th>Cuatrimestre</th>
+                                <th>Promedio</th>
+                                <th>Estado</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>2431102004</td>
+                                <td>Yoselin Carolina Gil Garcia</td>
+                                <td>ITI</td>
+                                <td>5°</td>
+                                <td>8.5</td>
+                                <td>Irregular</td>
+                            </tr>
+                            <tr>
+                                <td>2431102005</td>
+                                <td>Jocelyn Romero Valencia</td>
+                                <td>ITI</td>
+                                <td>5°</td>
+                                <td>9.7</td>
+                                <td>Regular</td>
+                            </tr>
+                            <tr>
+                                <td>2431102006</td>
+                                <td>Jose Luis Andres Ronquillo</td>
+                                <td>ITI</td>
+                                <td>5°</td>
+                                <td>9.2</td>
+                                <td>Regular</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <header class="section-header">
+                    <h2>Tabla con Colspan y Rowspan</h2>
+                    <p>Ejemplo de combinación de celdas</p>
+                </header>
+
+                <div class="card">
+                    <h3>Horario Escolar - 5to Cuatrimestre ITI</h3>
+                    <table class="tabla">
+                        <thead>
+                            <tr>
+                                <th>Hora</th>
+                                <th>Lunes</th>
+                                <th>Martes</th>
+                                <th>Miércoles</th>
+                                <th>Jueves</th>
+                                <th>Viernes</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>7:00 - 9:00</td>
+                                <td rowspan="2">Programación Web</td>
+                                <td>Bases de Datos</td>
+                                <td rowspan="2">Programación Web</td>
+                                <td>Redes</td>
+                                <td>Inglés</td>
+                            </tr>
+                            <tr>
+                                <td>9:00 - 11:00</td>
+                                <td>Matemáticas</td>
+                                <td>Sistemas Operativos</td>
+                                <td>Proyecto</td>
+                            </tr>
+                            <tr>
+                                <td>11:00 - 13:00</td>
+                                <td colspan="5">RECESO</td>
+                            </tr>
+                            <tr>
+                                <td>13:00 - 15:00</td>
+                                <td>Redes</td>
+                                <td>Inglés</td>
+                                <td>Bases de Datos</td>
+                                <td>Matemáticas</td>
+                                <td>Tutoría</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+       
+        <section class="section section-alt">
+            <div class="container">
+                <header class="section-header">
+                    <h2>Catálogo de Productos</h2>
+                    <p>Tabla con información de productos</p>
+                </header>
+
+                <div class="card">
+                    <h3>Productos Tecnológicos</h3>
+                    <table class="tabla">
+                        <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>Producto</th>
+                                <th>Categoría</th>
+                                <th>Precio</th>
+                                <th>Stock</th>
+                                <th>Disponibilidad</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>001</td>
+                                <td>Laptop Dell XPS 15</td>
+                                <td>Computadoras</td>
+                                <td>$25,000</td>
+                                <td>15</td>
+                                <td>Disponible</td>
+                            </tr>
+                            <tr>
+                                <td>002</td>
+                                <td>Mouse Logitech MX Master</td>
+                                <td>Accesorios</td>
+                                <td>$1,500</td>
+                                <td>45</td>
+                                <td>Disponible</td>
+                            </tr>
+                            <tr>
+                                <td>003</td>
+                                <td>Teclado Mecánico Corsair</td>
+                                <td>Accesorios</td>
+                                <td>$2,800</td>
+                                <td>0</td>
+                                <td>Agotado</td>
+                            </tr>
+                            <tr>
+                                <td>004</td>
+                                <td>Monitor LG 27"</td>
+                                <td>Monitores</td>
+                                <td>$5,500</td>
+                                <td>8</td>
+                                <td>Disponible</td>
+                            </tr>
+                            <tr>
+                                <td>005</td>
+                                <td>Webcam Logitech C920</td>
+                                <td>Accesorios</td>
+                                <td>$1,800</td>
+                                <td>22</td>
+                                <td>Disponible</td>
+                            </tr>
+                            <tr>
+                                <td>006</td>
+                                <td>Impresora HP LaserJet</td>
+                                <td>Impresoras</td>
+                                <td>$4,500</td>
+                                <td>12</td>
+                                <td>Disponible</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <header class="section-header">
+                    <h2>Calificaciones</h2>
+                    <p>Tabla de evaluaciones por materia</p>
+                </header>
+
+                <div class="card">
+                    <h3>Kardex - Yoselin Carolina Gil Garcia</h3>
+                    <table class="tabla">
+                        <thead>
+                            <tr>
+                                <th>Materia</th>
+                                <th>Parcial 1</th>
+                                <th>Parcial 2</th>
+                                <th>Parcial 3</th>
+                                <th>Proyecto</th>
+                                <th>Promedio Final</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Programación Web</td>
+                                <td>95</td>
+                                <td>92</td>
+                                <td>98</td>
+                                <td>100</td>
+                                <td>96.25</td>
+                            </tr>
+                            <tr>
+                                <td>Bases de Datos</td>
+                                <td>88</td>
+                                <td>90</td>
+                                <td>92</td>
+                                <td>95</td>
+                                <td>91.25</td>
+                            </tr>
+                            <tr>
+                                <td>Redes de Computadoras</td>
+                                <td>85</td>
+                                <td>88</td>
+                                <td>90</td>
+                                <td>92</td>
+                                <td>88.75</td>
+                            </tr>
+                            <tr>
+                                <td>Sistemas Operativos</td>
+                                <td>90</td>
+                                <td>93</td>
+                                <td>95</td>
+                                <td>98</td>
+                                <td>94.00</td>
+                            </tr>
+                            <tr>
+                                <td>Inglés V</td>
+                                <td>100</td>
+                                <td>98</td>
+                                <td>100</td>
+                                <td>100</td>
+                                <td>99.50</td>
+                            </tr>
+                            <tr>
+                                <td colspan="5"><strong>Promedio General</strong></td>
+                                <td><strong>93.95</strong></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-content">
+            <p>
+                &copy; 2026 Yoselin Carolina Gil Garcia - Tablas HTML
+            </p>
+        </div>
+    </footer>
+
+</body>
+</html>
